@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Comet",
+  "description": "All rights reserved to Chen Shmilovich and Nadav Dori.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}

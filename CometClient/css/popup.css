@@ -1,0 +1,366 @@
+body {
+/*        background-image:url("../img/sparks1.gif");
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-color: #F6F6F6;
+  margin: 5px;
+  font-weight: normal;
+  opacity:1;
+}
+
+.comment-options-nav{
+  padding-top: 10px
+}
+.selected{
+  opacity: 1 !important;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.clock{
+  font-size: 12px;
+  opacity: 0.7;
+}
+.star-button,.quote-button,.spark-button{
+  margin-right: 5px;
+  color:  #323C46;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.fa-commenting,.fa-thumbs-up{
+  font-size: 15px;
+  margin-right: 3px;
+}
+.star-button:active,.quote-button:active,.spark-button:active{
+  color:#F4837D;
+}
+
+.star-button:hover,.quote-button:hover,.spark-button:hover{
+  opacity: 1;
+}
+
+cite{
+  font-size: 13px;
+}
+hr{
+  border-color:#CEB6A9;
+  margin-top: 0;
+  padding:0;
+}
+a{
+  cursor: pointer;
+}
+footer{
+  margin-top:5px;
+}
+.authorName{
+  font-weight: bold;
+  margin: 0px;
+}
+hr{
+  margin-bottom: 5px;
+}
+
+.text-right{
+  text-align: right;
+  position: relative;
+  float: right;
+}
+
+#no-comments-yet-label{
+  opacity: 0.5;
+}
+
+#comment-text-area{
+  border-radius: !important 100px;
+}
+.mobile_scrollable_wrap::-webkit-scrollbar-track,.emoji-wysiwyg-editor::-webkit-scrollbar-track,.style-2::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.mobile_scrollable_wrap::-webkit-scrollbar,.emoji-wysiwyg-editor::-webkit-scrollbar,.style-2::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.mobile_scrollable_wrap::-webkit-scrollbar-thumb,.emoji-wysiwyg-editor::-webkit-scrollbar-thumb,.style-2::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #F4837D;
+}
+
+#app {
+  width: 550px;
+  height: 400px;
+}
+
+#message-board{
+  background-color: white;
+  padding:4px;
+  margin:0;
+  margin-bottom:7px;
+  height: 310px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #F4837D !important;
+}
+
+#email-label{
+  position: absolute;
+  top:10px;
+   color:#F6F6F6;
+  font-size:10px;
+}
+
+#comment-form{
+  margin-bottom :7px;
+}
+#app-header{
+/*  background-image:url("../img/CometBackground.gif");
+  background-repeat: no-repeat;
+  background-position: center; */
+  box-shadow: 0px 0px 5px #888888;
+/*  background-size: 100px 80px;*/
+
+  margin-top:3px;
+  border:solid #323C46 0px;
+  background-color:#323C46;
+  color: white;
+}
+
+.emoji-wysiwyg-editor{
+  border-radius: 10px;
+}
+
+.emoji-menu{
+   width: 200px; 
+   top: 25px;
+}
+
+.blockquote{
+  margin-bottom:10px;
+  width: 450px;
+  font-size:15px;
+  border-bottom :solid;
+  border-color: #EFEFEF;
+  border-radius: 15px;
+  opacity: 0.9;
+  background-color:#ACC9C9;
+  margin-right:50px;
+  overflow: hidden;
+
+}
+
+.quoted-comment{
+  border:solid grey 1px;
+  padding:10px;
+  border-radius: 10px;
+}
+
+.attached-quoted-comment{
+  background-color: #323C46;
+  color: white;
+  width: 535px;
+  padding: 5px;
+  font-size: 10px;
+     position:absolute;
+    bottom:160px;
+    left: 10px;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+.attached-quoted-comment:hover{
+  opacity: 0.9;
+}
+.fa-times{
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+
+.myComment{
+  background-color: #C3D3AF !important;
+  position:relative;
+  float: right;
+  margin-right:0;
+  margin-left:50px;
+}
+cite{
+  font-size:12px;
+}
+.row {
+    margin: 2px 0;
+}
+
+.text {
+    word-wrap: break-word;
+    height: 50px;
+    text-overflow: ellipsis;
+}
+
+#logo{
+  margin:0px;
+}
+#submit-comment-button{
+  margin-top:0;
+  margin-bottom: 20px;
+}
+
+#name-input{
+  padding:7px;
+  margin-bottom:7px;
+  border-radius: 10px;
+}
+
+#name-input::-webkit-input-placeholder{
+  padding-left:0px;
+  text-align: left
+}
+#sign-up-submit{
+  margin-bottom:10px;
+}
+
+.popover {
+  z-index: !important 1000;
+}
+textarea {
+  resize: vertical;
+  min-height: 50px;
+  max-height: 200px;
+}
+.form-control:focus {
+    border: 0;
+    -webkit-box-shadow: grey;
+    box-shadow: grey;
+}
+.fa-refresh{
+ background-color: black;
+ color:#F6F6F6;
+ top:90px;
+ right: 10px;
+ position: absolute;
+ cursor: pointer;
+ font-size: 15px;
+}
+
+.fa-sign-out{
+ color:#F6F6F6;
+ top:3px;
+ left: 5px;
+ margin-right: 5px;
+ position: relative;
+ cursor: pointer;
+ font-size: 15px;
+}
+.fa-cog{
+  color:#F6F6F6;
+  position: relative;
+  float: right;
+  right: 5px;
+  top: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.fa-refresh:active, .fa-sign-out:active, .fa-cog:active{
+   color: #C3D3AF;
+}
+
+/*
+.fa:active{
+ color: #C3D3AF;
+}*/
+#authentication-layout{
+  margin: 0;
+  width:550px;
+  height:600px;
+  background-color: #F6F6F6;
+  z-index: 100;
+  position:absolute;
+  margin:0;
+
+}
+#settings-square{
+  width:50px;
+  height: 50px;
+  position: absolute;
+  float: left;
+  background-color: red;
+  z-index: 10000
+}
+
+  .input-group-button {
+    .circle {
+      border-radius: 50%;
+      padding: 0.25em 0.8em;
+    }
+  }
+
+  .sparked-comment{
+/*    border-bottom: solid 3px #ad4a4a !important;
+    border-left: solid 3px #ad4a4a !important;*/
+    background-image:url("../img/sparks.gif") !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important; 
+  }
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/Loading_icon.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+#url-bar{
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  margin: 0;
+      height: 20px;
+  text-align: center;
+  padding: 3px;
+  z-index: 99999;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+}
+#url-bar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+    display: none;
+}
+

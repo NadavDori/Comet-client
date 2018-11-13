@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Com.nt</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libs/emoji-picker/css/emoji.css" rel="stylesheet">
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/shared/authentication.js"></script>
+    <script src="js/shared/apiClient.js"></script>
+    <script src="js/shared/htmlGenerator.js"></script>
+    <script src="js/shared/formValidation.js"></script>
+    <script src="js/views/signInView.js"></script>
+    <script src="js/views/signUpView.js"></script>
+    <script src="js/views/mainAppView.js"></script>
+    
+    <link href="css/popup.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!--SIGN-IN-VIEW -->
+      <div class="hidden" id="sign-in-view">
+        <div id="app-header">
+          <div class="row"><br></div>
+          <div id="logo" class="text-center"><img src="img/SparkCatLogo.png"></img></div>
+        </div>
+        <h3>Sign-In</h3>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input id="sign-in-email" maxlength="50" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input id="sign-in-password" maxlength="20" type="password" class="form-control" placeholder="Password">
+        </div>
+        <label id="incorrect-email-or-password-label" class="hidden label label-danger">Incorrect email or password.</label>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="sign-in-remember-me" type="checkbox" checked="checked" class="form-check-input">
+            Remember me
+          </label>
+        </div>
+        <div class="form-group">
+          <a id = "not-a-user-link"><b>Not a user?</b> Create a new account</a>
+        </div>
+        <button id="sign-in-submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <!--SIGN-UP-VIEW -->
+      <div class="hidden" id="sign-up-view">
+        <div id="app-header">
+          <div class="row"><br></div>
+          <div id="logo" class="text-center"><img src="img/SparkCatLogo.png"></img></div>
+        </div>
+        <h3>Sign-Up</h3>
+        <div class="form-group">
+          <label for="sign-up-email">Email address</label>
+          <input id="sign-up-email" maxlength="50" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+          <label id="invalid-email-address-label" class="hidden label label-danger">Invalid email address.</label>
+        </div>
+        <label id="email-already-exists-label" class="hidden label label-danger">Email already exists.</label>
+        <div class="form-group">
+          <label for="sign-up-password">Password</label>
+          <input id="sign-up-password" maxlength="20" type="password" class="form-control" placeholder="Password">
+          <label id="password-too-short-label" class="hidden label label-danger">Your password should be at least 6 digits long.</label>
+        </div>
+        <div class="form-group">
+          <label for="sign-up-confirm-password">Confirm password</label>
+          <input id="sign-up-confirm-password" type="password" class="form-control" placeholder="Password">
+          <label id="passwords-dont-match-label" class="hidden label label-danger">Passwords don't match.</label>
+        </div>
+        <div class="form-group">
+          <a id = "already-a-user-link"><b>Already a user?</b> Sign-In</a>
+        </div>
+        <button id="sign-up-submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <!--MAIN-APP-VIEW -->
+      <div id="main-app-view">
+        <div id="app-header">
+          <div id="user-info" class="row">
+            <i id="sign-out-button" class="fa fa-sign-out" data-placement="bottom" data-container="body" data-toggle="tooltip" title="Sign-out">&nbsp;</i>
+            <small id="email-label"></small>
+            <!--             <i class="fa fa-cog" aria-hidden="true" data-placement="bottom" data-container="body" data-toggle="tooltip" title="Settings"></i> -->
+          </div>
+          <div id="logo" class="text-center"><img src="img/SparkCatLogo.png"></img></div>
+          <div class="row">
+            <i id="refreshBtn" class="fa fa-refresh" data-placement="bottom" data-container="body" data-toggle="tooltip"  title="Refresh"></i>
+          </div>
+          <p id="url-bar"></p>
+        </div>
+
+        <div id="message-board" class="style-2"></div>
+        <footer class="footer">
+          <div class="form-group-row">
+            <div>
+              <input maxlength="20" id="name-input" autocomplete="off" class="form-control" placeholder="Name" type="text">
+            </div>
+          </div>
+          <div id="comment-form" class="form-group-row emoji-picker-container">
+            <textarea id="comment-text-area" autocomplete="off" class="form-control" rows="1" placeholder="Write your comment here.." data-emojiable="true"></textarea>
+          </div>
+          <button id="submit-comment-button" class="btn btn-primary orangeOnHover">Submit</button>
+        </footer>
+      </div>
+      <script src="js/app.js"></script>
+      <div class="modal"></div>
+      <script src="libs/emoji-picker/js/config.js"></script>
+      <script src="libs/emoji-picker/js/util.js"></script>
+      <script src="libs/emoji-picker/js/jquery.emojiarea.js"></script>
+      <script src="libs/emoji-picker/js/emoji-picker.js"></script>
+    </body>
+  </html>
